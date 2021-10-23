@@ -44,6 +44,13 @@ body{
     flex-direction: column;
 }
 
+._container-little{
+    max-width: 1042px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+
 ._container-small{
     max-width: 1140px;
     margin: 0 auto;
@@ -160,10 +167,15 @@ body{
 .page__category-cards{
     margin: 15px 0 0 0;
 }
-.page_new-products{
+.page__new-products{
     margin: 60px 0 0 0;
 }
-
+.page__slider{
+    margin: 60px 0 0 0;
+}
+.page__info{
+    margin: 60px 0 0 0;
+}
 /* -------------CATEGORY-CARDS----------------------------------------- */
 
 .category-cards__body{
@@ -257,6 +269,64 @@ body{
     width: min-content;
     margin: 27px auto 0;
 } 
+
+/* ------------------Slider-------------------------------------------------- */
+
+.slider__container img{
+    display: block;
+    width: 100%;
+}
+
+/* ----------------Info---------------------------------------------------------- */
+
+.info__container{
+    position: relative;
+}
+.info__title{
+    position: absolute;
+    top: 128px;
+    left: 41px;
+    display: block;
+    font-family: 'Sunday Best [rus by aLiNcE]';
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 191%;
+    max-width: 256px;
+    text-align: right;
+}
+.info__body{
+    display: flex;
+}
+.info__adress-and-time{
+    flex: 0 1 21%;
+    align-self: flex-end;
+    margin: 0 17px 0 0;
+    text-align: right;
+    font-size: 16px;
+    line-height: 125%;
+}
+.info__adress{
+    margin: 0 0 10px 0;
+}
+.info__image img{
+    display: block;
+}
+.info__image{
+    flex: 0 1 53%;
+    margin: 0 15px 0 0;
+}
+.info__text{
+    flex: 0 1 22%;
+    align-self: center;
+    font-size: 16px;
+    line-height: 125%;
+}
+.info__button-open-maps{
+    display: block;
+    width: min-content;
+    margin: 47px auto 0;
+}
+
 
 
 
