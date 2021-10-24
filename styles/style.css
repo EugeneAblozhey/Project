@@ -282,6 +282,11 @@ body{
 .info__container{
     position: relative;
 }
+.info__map{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 .info__title{
     position: absolute;
     top: 128px;
