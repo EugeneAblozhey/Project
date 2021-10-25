@@ -176,6 +176,9 @@ body{
 .page__info{
     margin: 60px 0 0 0;
 }
+.page__top-products{
+    margin: 60px 0 0 0;
+}
 /* -------------CATEGORY-CARDS----------------------------------------- */
 
 .category-cards__body{
@@ -256,6 +259,7 @@ body{
     font-weight: 400;
     line-height: 121%;
     padding: 0 0 0 20px;
+    color: #1F1F1F;
 }
 .item-new-products__price{
     font-size: 24px;
@@ -332,12 +336,106 @@ body{
     margin: 47px auto 0;
 }
 
+/* -----------------TOP-PRODUCTS----------------------------------------- */
 
-
-
-
-
-
+.top-products__header{
+    padding: 10px 0;
+    background-color: #FDA3C4;
+}
+.top-products__title{
+    background-color: #FDA3C4;
+    padding: 22px 0;
+    border-bottom: solid #F40000 3px;
+    border-top: solid #F40000 3px;
+    color: #F40000;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 121%;
+}
+.top-products__body{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto 0;
+}
+.top-products__small-cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 24%;
+}
+.top-products__small-column{
+    display: flex;
+    flex: 0 1 100%;
+    max-width: 274px;
+}
+.small-item-new-products__image{
+    border-bottom: 2px solid #FDA3C4;
+    display: flex;
+    justify-content: space-around;
+}
+.small-item-new-products__image img{
+    max-height: 238px;
+}
+.small-item-new-products__description{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 18px 12px;
+}
+.small-item-new-products__name{
+    color: #1F1F1F;
+    padding: 0 5px 0 0;
+}
+.small-item-new-products__price{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 121%;
+    color: #FDA3C4;
+    padding: 0 0 0 5px;   
+}
+.top-products__big-column{
+    display: flex;
+    flex: 0 1 100%;
+    max-width: 370px;
+}
+.big-item-new-products{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.big-item-new-products__image{
+    border-bottom: 2px solid #FDA3C4;
+    display: flex;
+    justify-content: space-around;
+}
+.big-item-new-products__image img{
+    max-height: 507px;
+}
+.big-item-new-products__description{
+    display: flex;
+    justify-content: space-around;
+    padding: 31px 28px 25px 22px;
+}
+.big-item-new-products__name{
+    font-size: 16px;
+    color: #1F1F1F;
+}
+.big-item-new-products__price{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 121%;
+    color: #FDA3C4; 
+    padding: 0 0 0 5px;  
+}
+.top-products__image{
+    flex: 0 1 41%;
+}
+.top-products__big-card{
+    flex: 0 1 32%;
+}
+.top-products__button_show-all{
+    display: block;
+    width: min-content;
+    margin: 27px auto 0;
+} 
 
 
 
