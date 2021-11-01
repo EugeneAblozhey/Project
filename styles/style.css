@@ -162,30 +162,29 @@ body{
 .page__top-products{
     margin: 60px 0 0 0;
 }
+.page__costumes{
+    margin: 60px 0 0 0;
+}
 /* -------------CATEGORY-CARDS----------------------------------------- */
 
 .category-cards__body{
-    display: flex;
-    
+    display: flex;   
     flex-wrap: wrap;
 }
 .category-cards__body img{
     display: block;
     width: 100%;
     height: 100%;
-
+    object-fit: cover;
 }
 .category-cards__link{
-    margin: 0 15px 15px 0;
+    flex: 0 1 24%;
+    margin: auto;
+    margin-bottom: 11px;
 }
-.category-cards__link:nth-child(4){
-    margin: 0 0 15px 0;
-}
-.category-cards__link:nth-child(5){
-    margin: 0 14px 15px 0;
-}
-.category-cards__link:nth-child(6){
-    margin: 0 0 15px 0;
+.link-big{
+    flex: 0 1 49%;
+    margin: auto;
 }
 
 /* -----------NEW-PRODUCTS----------------------------- */
@@ -219,35 +218,34 @@ body{
     margin: 0 17px 0 0;
 }
 .new-products__column{
-    max-width: 360px;
     flex: 0 1 25%;
 }
-.item-new-products__image{
+.product-item__image{
     border-bottom: 2px solid #FDA3C4;
 }
-.item-new-products__image img{
+.product-item__image img{
     display: block;
     width: 100%;
     height: 100%;
 }
-.item-new-products__description{
+.product-item__description{
     display: flex;
     justify-content: space-around;
     margin: 27px 0 28px 0;
 }
-.item-new-products__name{
+.product-item__name{
     font-size: 16px;
     font-weight: 400;
     line-height: 121%;
-    padding: 0 0 0 20px;
+    padding: 0 10px 0 20px;
     color: #1F1F1F;
 }
-.item-new-products__price{
+.product-item__price{
     font-size: 24px;
     font-weight: 700;
     line-height: 121%;
     color: #FDA3C4;
-    padding: 0 20px 0 0;
+    padding: 0 20px 0 5px;
 }
 .new-products__button_show-all{
     display: block;
@@ -300,6 +298,9 @@ body{
 }
 .info__image img{
     display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .info__image{
     flex: 0 1 53%;
@@ -337,35 +338,41 @@ body{
     display: flex;
     justify-content: space-between;
     margin: 15px auto 0;
+    max-height: 600px;
 }
 .top-products__small-cards{
+    margin: 0 20px 0 0;
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 24%;
+
 }
 .top-products__small-column{
     display: flex;
-    flex: 0 1 100%;
-    max-width: 274px;
+    justify-content: right;
+    flex: 1 1 100%;
 }
-.small-item-new-products__image{
-    border-bottom: 2px solid #FDA3C4;
+.top-products__small-item .product-item__image{
     display: flex;
     justify-content: space-around;
 }
-.small-item-new-products__image img{
+.top-products__small-item .product-item__image img{
+    display: block;
+    width: auto;
     max-height: 238px;
 }
-.small-item-new-products__description{
+.top-products__small-item .product-item__description{
     display: flex;
     justify-content: space-around;
-    padding: 15px 18px 12px;
+    margin: 13px 0 14px 0;
 }
-.small-item-new-products__name{
-    color: #1F1F1F;
+.top-products__small-item .product-item__name{
     padding: 0 5px 0 0;
+    font-size: 14px;
+    line-height: 121%;
+    font-weight: 400;
 }
-.small-item-new-products__price{
+.top-products__small-item .product-item__price{
     font-size: 16px;
     font-weight: 600;
     line-height: 121%;
@@ -375,42 +382,19 @@ body{
 .top-products__big-column{
     display: flex;
     flex: 0 1 100%;
-    max-width: 370px;
-}
-.big-item-new-products{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-.big-item-new-products__image{
-    border-bottom: 2px solid #FDA3C4;
-    display: flex;
-    justify-content: space-around;
-}
-.big-item-new-products__image img{
-    max-height: 507px;
-}
-.big-item-new-products__description{
-    display: flex;
-    justify-content: space-around;
-    padding: 31px 28px 25px 22px;
-}
-.big-item-new-products__name{
-    font-size: 16px;
-    color: #1F1F1F;
-}
-.big-item-new-products__price{
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 121%;
-    color: #FDA3C4; 
-    padding: 0 0 0 5px;  
 }
 .top-products__image{
     flex: 0 1 41%;
 }
+.top-products__image img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
 .top-products__big-card{
     flex: 0 1 32%;
+    align-self: center;
+    margin: 0 0 0 20px;
 }
 .top-products__button_show-all{
     display: block;
@@ -418,7 +402,44 @@ body{
     margin: 27px auto 0;
 } 
 
-
+/* -----------------------COSTUMES----------------------------------------- */
+.costumes__header{
+    padding: 6px 0 6px 0;
+    position: relative;
+}
+.costumes__title{
+    font-family: 'Sunday Best [rus by aLiNcE]';
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 191%;
+    color: #FDA3C4;
+}
+.costumes__title-small{
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 14px;
+}
+.costumes__title-small-text{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 121%;
+    color: #1F1F1F;
+    margin: 0 17px 0 0;
+}
+.costumes__body{
+    display: flex;
+}
+.costumes__image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.costumes__button-show-all{
+    display: block;
+    width: min-content;
+    margin: 27px auto 0;
+}
 
 
 
