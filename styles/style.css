@@ -80,6 +80,11 @@ body{
 .header__container{
     min-height: 103px;
 }
+@media (max-width: 640px){
+    .header__container{
+        min-height: 50px;
+    }
+}
 .header__content{
     display: flex;
     justify-content: space-between;
@@ -89,7 +94,16 @@ body{
 .header__info{
     display: flex;
 }
-
+@media (max-width: 768px){
+    .header__info{
+        flex-direction: column;
+    }
+}
+@media (max-width: 480px){
+    .header__info{
+        display: none;
+    }
+}
 .header__tel{
     padding: 0 0 0 10px;
 }
@@ -120,9 +134,24 @@ body{
     line-height: 121%;
     color: #1F1F1F;
 }
+@media (max-width: 640px){
+    .header__search-text{
+        display: none;
+    }
+}
 .header__cart-link{
     display: inline-block;
     padding: 0 0 0 33px;
+}
+@media (max-width: 640px){
+    .header__fav-and-cart{
+        display: none;
+    }
+}
+@media (max-width: 640px){
+    .header__menu{
+        display: none;
+    }
 }
 .menu__list{
     display: flex;
@@ -138,14 +167,75 @@ body{
     line-height: 121%;
     color: #1F1F1F;
 }
+@media (max-width: 768px){
+    .menu__link{
+        font-size: 12px;
+    }
+}
 .menu__link:hover{
     color: #FDA3C4;
+}
+
+/* ---------------------------MOBILE-MENU----------------------------------------- */
+
+.mobile-menu__container{
+    display: flex;
+    justify-content: space-around;
+}
+.mobile-menu__link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mobile-menu__link img{
+    display: block;
+    margin: 0 auto;
+}
+.link-name{
+    font-size: 8px;
+    font-weight: 600;
+    color: #1F1F1F;
+    text-align: center;
+}
+.burger{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FDA3C4;
+    z-index: 100;
+    padding: 150px;
+}
+.burger__title{
+    font-family: "Sunday Best [rus by aLiNcE]";
+    font-size: 20px;
+    line-height: 191%;
+    color: #FFFFFF;
+    margin: 0 0 40px 0;
+}
+.burger__item:not(:last-child){
+    margin: 0 0 24px 0;
+}
+.burger__item-link{
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.burger__close-button{
+    position: absolute;
+    top: 40px;
+    right: 20px;
 }
 
 /* --------------------------PAGE--------------------------------- */
 
 .page{
     flex-grow: 1;
+}
+.page__mobile-menu{
+    margin: 15px 0 0 0;
 }
 .page__category-cards{
     margin: 15px 0 0 0;
