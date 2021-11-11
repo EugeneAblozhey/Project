@@ -564,23 +564,78 @@ body{
     font-size: 25px;
     line-height: 121%;
 }
+@media (max-width: 768px){
+    .top-products__title{
+        font-size: 20px;
+    }
+}
+@media (max-width: 640px){
+    .top-products__title{
+        font-size: 16px;
+    }
+}
+@media (max-width: 480px){
+    .top-products__title{
+        font-size: 22px;
+    }
+}
+@media (max-width: 480px){
+    .top-products__title marquee:nth-child(1){
+        width: 100%;
+    }
+    .top-products__title marquee:nth-child(2){
+        display: none;
+    }
+}
 .top-products__body{
     display: flex;
     justify-content: space-between;
     margin: 15px auto 0;
     max-height: 600px;
 }
+@media (max-width: 640px){
+    .top-products__body{
+        flex-wrap: wrap;
+        max-height: none;
+    }
+}
 .top-products__small-cards{
     margin: 0 20px 0 0;
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 24%;
-
+    flex: 0 1 24%;
+}
+@media (max-width: 1024px){
+    .top-products__small-cards{
+        margin: 0 5px 0 0;
+    }
+}
+@media (max-width: 768px){
+    .top-products__small-cards{
+        flex: 0 1 30%;
+    }
+}
+@media (max-width: 640px){
+    .top-products__small-cards{
+        flex: 0 1 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
 }
 .top-products__small-column{
     display: flex;
     justify-content: right;
     flex: 1 1 100%;
+}
+@media (max-width: 640px){
+    .top-products__small-column{
+        justify-content: center;
+        flex: 1 1 49%;
+        
+    }
+    .top-products__small-column:nth-child(1){
+        margin: 0 5px 0 0;
+    }
 }
 .top-products__small-item .product-item__image{
     display: flex;
@@ -590,6 +645,11 @@ body{
     display: block;
     width: auto;
     max-height: 238px;
+}
+@media (max-width: 480px){
+    .top-products__small-item .product-item__image img{
+        max-height: 200px;
+    }
 }
 .top-products__small-item .product-item__description{
     display: flex;
@@ -616,6 +676,21 @@ body{
 .top-products__image{
     flex: 0 1 41%;
 }
+@media (max-width: 1024px){
+    .top-products__image{
+        flex: 0 1 50%;
+    }
+}
+@media (max-width: 768px){
+    .top-products__image{
+        flex: 0 1 65%;
+    }
+}
+@media (max-width: 640px){
+    .top-products__image{
+        flex: 0 1 100%;
+    }
+}
 .top-products__image img{
     width: 100%;
     height: 100%;
@@ -625,6 +700,17 @@ body{
     flex: 0 1 32%;
     align-self: center;
     margin: 0 0 0 20px;
+}
+@media (max-width: 1024px){
+    .top-products__big-card{
+        flex: 0 1 20%;
+        margin: 0 0 0 5px;
+    }
+}
+@media (max-width: 768px){
+    .top-products__big-card{
+        display: none;
+    }
 }
 .top-products__button_show-all{
     display: block;
@@ -644,6 +730,11 @@ body{
     line-height: 191%;
     color: #FDA3C4;
 }
+@media (max-width: 768px){
+    .costumes__title{
+        font-size: 40px;
+    }
+}
 .costumes__title-small{
     display: flex;
     position: absolute;
@@ -657,8 +748,21 @@ body{
     color: #1F1F1F;
     margin: 0 17px 0 0;
 }
+@media (max-width: 768px){
+    .costumes__title-small-text{
+        font-size: 20px;
+    }
+}
 .costumes__body{
     display: flex;
+}
+@media (max-width: 768px){
+    .costumes__body{
+        flex-wrap: wrap;
+    }
+    .costumes__image{
+        flex: 1 1 50%;
+    }
 }
 .costumes__image img{
     display: block;
@@ -671,13 +775,22 @@ body{
     margin: 27px auto 0;
 }
 
+
 /* --------------------INFO-BLOCK------------------------------------ */
 
 .info-block__body{
     display: flex;
     justify-content: space-between;
 }
-
+@media (max-width: 1024px){
+    .info-block__body{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+.info-block__item{
+    margin: 10px;
+}
 .info-block__item img{
     display: block;
     width: 100%;
@@ -689,6 +802,12 @@ body{
 .instagram__body{
     display: flex;
     justify-content: space-between;
+}
+@media (max-width: 1024px){
+    .instagram__body{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
 }
 .instagram__title-block{
     flex: 1 1 30%;
@@ -706,6 +825,11 @@ body{
 }
 .instagram__title-text{
     font-size: 16px;
+}
+@media (max-width: 1024px){
+    .instagram__title-text{
+        padding: 10px;
+    }
 }
 .instagram__title-images{
     display: flex;
@@ -731,6 +855,12 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
+@media (max-width: 1024px){
+    .instagram__boorivagirls{
+        flex-direction: row;
+        margin: 5px 0 0 0;
+    }
+}
 .instagram__booriva-images{
     display: flex;
 }
@@ -746,9 +876,26 @@ body{
     color: #F40000;
     font-size: 42px;
 }
+@media (max-width: 1024px){
+    .instagram__booriva-tag{
+        align-self: center;
+        font-size: 35px;
+    }
+}
+@media (max-width: 768px){
+    .instagram__booriva-tag{
+        font-size: 25px;
+    }
+}
 .instagram__text{
     font-size: 16px;
     text-align: end;
+}
+@media (max-width: 1024px){
+    .instagram__text{
+        align-self: flex-end;
+        font-size: 14px;
+    }
 }
 
 /* -------------------------------FOOTER------------------------------------------------ */
