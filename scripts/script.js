@@ -61,7 +61,33 @@ document.querySelector('.info__button-open-maps').addEventListener('mouseover', 
 document.querySelector('.info__button-open-maps').addEventListener('mouseout', (e) => {
     changeImage(e, 'images/buttons/button_navigate-pink.svg');
 })
-
+document.querySelector('.mobile-menu__burger-button').addEventListener('click', (e) => {
+    e.preventDefault();
+    const burger = document.querySelector('.burger');
+    burger.classList.remove('display-none');
+})
+document.querySelector('.burger__close-button').addEventListener('click', (e) => {
+    e.preventDefault();
+    const burger = document.querySelector('.burger');
+    burger.classList.add('display-none');
+})
+document.querySelector('.sub-menu__link').addEventListener('click', (e) => {
+    e.preventDefault();
+    const subMenu = document.querySelector('.sub-menu');
+    subMenu.classList.remove('display-none');
+})
+document.querySelector('.sub-menu__close-button').addEventListener('click', (e) => {
+    e.preventDefault();
+    const subMenu = document.querySelector('.sub-menu');
+    subMenu.classList.add('display-none');
+    const burger = document.querySelector('.burger');
+    burger.classList.add('display-none');
+})
+document.querySelector('.comeback-link').addEventListener('click', (e) => {
+    e.preventDefault();
+    const subMenu = document.querySelector('.sub-menu');
+    subMenu.classList.add('display-none');
+})
 
 
 
